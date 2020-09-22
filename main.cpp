@@ -5,13 +5,16 @@ using namespace std;
 int main() {
   char rasp;
   double x;
-  do{
+
+  rasp = 'd';
+  while (rasp == 'd') {
     cout << "Introduceti gradele (x): ";
     cin >> x;
     cout << "sin(x) = " << sin(3.14159 * x / 180.) << endl;
-    cout << "Mai continuati? (d/n)";
+    cout << "Mai continuati? (d/n) ";
     cin >> rasp;
   }
-  while (rasp == 'd');
+  
+
   return 0;
 }
