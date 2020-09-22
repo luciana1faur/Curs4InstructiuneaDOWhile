@@ -1,21 +1,23 @@
 #include <iostream>
-#include <cmath>
-#include <cctype>
 using namespace std;
+#include <cmath>
 
 int main() {
   char rasp;
-  double x;
+  int x;
+  int i;
 
-  do {
+  for(i = 0; i < 100; i++){
+
     cout << "Introduceti gradele (x): ";
     cin >> x;
     cout << "sin(x) = " << sin(3.14159 * x / 180.) << endl;
-    cout << "Mai continuati? (d/n) ";
+    cout << "Mai continuati? (d/n)";
     cin >> rasp;
-  }
-  while (tolower(rasp) == 'd'); 
-  //sau while (toupper(rasp) == 'D'); ... este acelasi lucru
+    if(toupper(rasp) != 'D')
+      break;
 
+      }
+      
   return 0;
 }
